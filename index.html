@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+		<link rel="icon" type="image/png" href="assets/img/logo.png" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SHOP NR-GAMING</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/materialize.min.js" ></script>
+	<script src="js/main.js" ></script>
+</head>
+<body>
+	<form id="LoginModal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h5 class="center-align">Login</h5>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account-circle prefix"></i>
+					<input id="name" type="text" class="validate">
+					<label for="name">Nombre</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-lock prefix"></i>
+					<input id="password" type="password" class="validate">
+					<label for="password">Contraseña</label>
+				</div>
+				<div class="col s12">
+					<p>User type</p>
+					<p>
+				      	<input name="group1" type="radio" id="test1" />
+				      	<label for="test1">STAFF</label>
+				    </p>
+				    <p>
+				      	<input name="group1" type="radio" id="test2" />
+				      	<label for="test2">Usuario</label>
+				    </p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Send"><i class="zmdi zmdi-mail-send"></i></a>
+			<a href="#!" class="modal-action modal-close waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cancel"><i class="zmdi zmdi-close"></i></a>
+		</div>
+	</form>
+	<form id="RegModal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h5 class="center-align">Registro</h5>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account prefix"></i>
+					<input id="name" type="text" class="validate">
+					<label for="name">Nombre</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account prefix"></i>
+					<input id="lastname" type="text" class="validate">
+					<label for="lastname">Apellido</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-face prefix"></i>
+					<input id="username" type="text" class="validate">
+					<label for="username">Nombre del Personaje</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-lock prefix"></i>
+					<input id="password" type="password" class="validate">
+					<label for="password">Contraseña</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="zmdi zmdi-account-box prefix"></i>
+					<input id="DNI" type="text" class="validate">
+					<label for="DNI">DNI</label>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Send"><i class="zmdi zmdi-mail-send"></i></a>
+			<a href="#!" class="modal-action modal-close waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cancel"><i class="zmdi zmdi-close"></i></a>
+		</div>
+	</form>
+	<nav class="NavBar full">
+		<div class="row">
+			<div class="tittles NavBar-logo col s12 m3">NR-Gaming | Zombie Exterminio</div>
+			<ul class="NavBar-links col m9">
+				<li><a href="http://www.nr-gaming.com/" class="waves-effect">[WEB]</a></li>
+				<li><a href="http://foro.nr-gaming.com/" class="waves-effect">[FORO]</a></li>
+				<li><a href="index.html" class="waves-effect">[Info y Ofertas]</a></li>
+				<li><a href="admin.html" class="waves-effect">[Admin/Multiplicadores]</a></li>
+				<li><a href="zpcash.html" class="waves-effect">[ZP CASH]</a></li>
+			</ul>
+			<i class="zmdi zmdi-more-vert full btn-menu hide-on-med-and-up waves-effect"></i>
+		</div>
+	</nav>
+	<div class="full ShoppingCart valign-wrapper">
+		<div class="container valign">
+			<div class="row valign-wrapper">
+				<div class="col s12 m6 valign">
+					<p class="center-align" style="color: #2F9FF3;">
+						<i class="zmdi zmdi-shopping-cart zmdi-hc-5x"></i>		
+					</p>
+					<p class="center-align">
+						<a class="btn-floating waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Limpiar Carrito" style="margin-right: 17px;"><i class="zmdi zmdi-delete"></i></a>
+						<a class="btn-floating waves-effect waves-light green tooltipped" data-position="bottom" data-tooltip="Confirmar Pago"><i class="zmdi zmdi-money"></i></a>
+					</p>
+				</div>
+				<div class="col s12 m6 valign">
+					<table class="centered highlight responsive-table">
+				        <thead>
+				          	<tr>
+								<th>Productos</th>
+								<th>Precio</th>
+				          	</tr>
+				        </thead>
+				        <tbody>
+					        <tr>
+					            <td>Product #1</td>
+					            <td>$0</td>
+					        </tr>
+					        <tr>
+					            <td>Product #2</td>
+					            <td>$0</td>
+					        </tr>
+					        <tr>
+					            <td>Product #3</td>
+					            <td>$0</td>
+					        </tr>
+				        	<tr>
+				        		<td>Total</td>
+				        		<td>$0</td>
+				        	</tr>
+				        </tbody>
+      				</table>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="full header valign-wrapper">
+		<div class="container valign">
+			<div class="row">
+				<div class="col s12">
+					<img src="assets/img/shop.png"  alt="Header" class="responsive-img center-box">
+					<h6 class="tittles center-align">Comunidad de Counter-Strike 1.6, que cuenta con servidor de ZP+LVL</h5>	
+					<h6 class="tittles center-align">donde tendras que sobrevivir para ser el mejor y poder pelear</h5>
+					<h6 class="tittles center-align"> en el TOP</h5>
+					<h4 class="tittles center-align">IP: 45.235.98.120:27017</h5>			
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="full new-prod">
+		<h5 class="tittles center-align">Productos en Promoción</h5>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 l4">
+					<div class="card hoverable">
+						<figure class="card-image">
+							<img src="assets/img/NRPAG12.jpg" >
+							<figcaption class="card-title">-Sin promoción-</figcaption>
+						</figure>
+						<div class="card-content">
+							<p>
+								Sin promoción, 
+								Oferta diponible hasta --/--/2019.
+							</p>
+						</div>
+						<div class="card-action">
+							<a href="https://www.google.com/">Click Aqui.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="col s12 m6 l4">
+					<div class="card hoverable">
+						<figure class="card-image">
+							<img src="assets/img/NRPAG12.jpg" >
+							<figcaption class="card-title">-Sin promoción-</figcaption>
+						</figure>
+						<div class="card-content">
+							<p>
+								Sin promoción, 
+								Oferta diponible hasta --/--/2019.
+
+							</p>
+						</div>
+						<div class="card-action">
+							<a href="https://www.google.com/">Click Aqui.</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l4">
+					<div class="card hoverable">
+						<figure class="card-image">
+							<img src="assets/img/NRPAG12.jpg" >
+							<figcaption class="card-title">-Sin promoción-</figcaption>
+						</figure>
+						<div class="card-content">
+							<p>
+								Sin promoción, 
+								Oferta diponible hasta --/--/2019.
+							</p>
+						</div>
+						<div class="card-action">
+							<a href="https://www.google.com/">Click Aqui.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="full promo">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h5 class="tittles center-align">-Servidor de NR-Gaming-</h5>
+					<h5 class="tittles center-align">[Zombie Exterminio]</h5>	
+					<h5 class="tittles center-align">IP: 45.235.98.120:27017</h5>		
+
+				</div>
+			    <div class="col s12 m4">
+			    	<p class="center-align">
+			        	<i class="zmdi zmdi-card-giftcard zmdi-hc-5x"></i>
+			    	</p>
+			        <p class="center-align flow-text">Eventos</p>
+			        <p>
+			        	Los Eventos seran hechos por el grupo STAFF(Dueños/Moderadores).
+			        	 Dias de eventos son Viernes, Sabado, Domingo(23Hrs ARG).
+			        </p>
+			    </div>
+			    <div class="col s12 m4">
+			    	<p class="center-align">
+			        	<i class="zmdi zmdi-card zmdi-hc-5x"></i>
+			    	</p>
+			        <p class="center-align flow-text">Pago con TARJETA Credito/Debito.</p>
+			        <p>
+			        	La Compra con tarjeta de Credito o Debito da ventaja a la activacion de producto
+			        	(Maximo de activacion 1 Hora).
+			        </p>
+			    </div>
+			    <div class="col s12 m4">
+			    	<p class="center-align">
+			        	<i class="zmdi zmdi-money zmdi-hc-5x"></i>
+			    	</p>
+			        <p class="center-align flow-text">Pago En Efectivo (Rapipago/PagoFacil)</p>
+			        <p>
+			        	La Compra con Efectivo puede demorar o no eso depende del local a donde paguen
+			        	(De 2 Horas a 6 Horas de Activacion).
+			        </p>
+			    </div>
+		    </div>
+		</div>	
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6">
+					<h5>NR-GAMING</h5>
+					<p>
+						Se recomienda no prestar cuentas por usos que le den(Hacks/Free). Dueños SOPAPIAMELABAMPIRIOLA 
+						y KeepCalm [!]. cualquier usuario que se haga pasar por parte del STAFF sera castigado sin previo aviso.
+					</p>
+				</div>
+				<div class="col s12 m6">
+					<h5 class="center-align">Redes Sociales</h5>
+					<ul class="center-align">
+						<li><a href="https://www.instagram.com/gamingnr"><i class="zmdi zmdi-instagram"></i> &nbsp; Fan Page</a></li>
+						<li><a href="https://invite.gg/nrgaming"><i class="zmdi zmdi-discord"></i> &nbsp; Discord</a></li>
+						<li><a href="https://www.facebook.com/nach.romano"><i class="zmdi zmdi-facebook"></i> &nbsp; Soporte</a></li>
+
+					</ul>	
+				</div>
+				<div class="col s12 tittles footer-copyright">NR-Gaming &copy; 2018-2019 | Edit by KeepCalm </div>
+				</div>
+		</div>
+	</footer>
+</body>
+</html>
